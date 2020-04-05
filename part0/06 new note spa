@@ -1,0 +1,18 @@
+title 0.6 new note SPA
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over browser:
+browser sends a POST request
+to /new_notes_spa
+with payload
+{content: <note value>, date: <timestamp>}
+end note
+
+server-->browser: HTTP 201 
+
+note over server:
+server reponse with HTTP 201 code
+and {message: "note created"}
+end note
+
